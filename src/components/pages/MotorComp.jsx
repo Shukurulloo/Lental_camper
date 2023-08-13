@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavbarComp from '../navbar/Navbar';
 import { Button, Col, Flex, Form, GridContainer, GridItems, HeadWrapper, ItemBar, Line, MainWrap, Row, SideBar, Text } from '../style/MotorComponentsStyle';
 import carData from '../mock/data';
@@ -10,7 +10,21 @@ import FooterComp from '../footer/Footer';
 
 
 const MotorComponents = () => {
-  console.log(carData)
+  const [filteredData, setFilteredData] = useState(carData);
+  const [isBrandChecked, setIsBrandChecked] = useState (false);
+  const handleClick = ()=> {
+    setIsBrandChecked(!isBrandChecked);
+    if (!isBrandChecked) {
+      const filteredCar = [...carData];
+      const filteredCompany = filteredCar.filter((carData) =>
+        carData.company.startsWith("다온티앤티")
+        );
+        setFilteredData(filteredCompany);
+    }else{
+      setFilteredData(...carData);
+    }
+  }
+  console.log("filtered ompany ", filteredData)
   return (
     <div style={{background:' #FAFAFA'}}>
       <NavbarComp/>
@@ -61,7 +75,7 @@ const MotorComponents = () => {
             <Line></Line>    
             <Form>       
               <div className="form-group">
-                <input type="checkbox" name="brand" />
+                <input type="checkbox" name="brand" onClick={handleClick} />
                 <label htmlFor="">escape</label>
               </div>
               <div className="form-group">
@@ -135,6 +149,7 @@ const MotorComponents = () => {
         </SideBar>
         <ItemBar>
           <Row>
+            
             <Flex left>
             <div>Item: <span style={{color:'blue'}}>{carData.length}</span></div>
             </Flex>

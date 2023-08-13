@@ -39,7 +39,7 @@ const CartComp = () => {
         </FlexLeft>
         
         <FlexRight>
-          <DescriptionTitle>
+          <DescriptionTitle >
             <h2>{carData[currImg].name}</h2>
             <h2 style={{color:'#006DAB'}}>{carData[currImg].cost}</h2>
             <span>Description</span>

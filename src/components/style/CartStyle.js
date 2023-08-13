@@ -11,7 +11,7 @@ h2{
     font-size:35px;
     color:'#373737';
     padding-bottom: 5px;
-    border-bottom: 1px solid #FF7A00;
+    border-bottom: 3px solid #FF7A00;
 }
 `
 
@@ -153,9 +153,9 @@ width: 350px;
 height: 50px;
 flex-shrink: 0;
 border-radius: 10px;
-background: rgba(55, 55, 55, 0.10);
+background: rgba(95, 55, 55, 0.10);
 /* btn sh */
-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
+box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.10);
 
 h5{
     color: var(--text, #373737);

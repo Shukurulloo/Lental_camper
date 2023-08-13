@@ -25,7 +25,8 @@ export const MainWrapper = styled.div`
 `
 
 export const Button = styled.button`
-width: 181px;
+width: ${({wd}) => wd || '181px;'};
+padding: ${({pd}) => pd || '0px'};
 height: 50px;
 color: #FFF;
 font-size: 16px;

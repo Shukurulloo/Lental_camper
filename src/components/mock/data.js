@@ -16,6 +16,7 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
+      viewed: "221"
     },    
     {      
       id: 2,
@@ -28,6 +29,8 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
+      viewed: "352"
+    
     },    
     {      
       id: 3,
@@ -40,6 +43,7 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
+      viewed: "114"
     },    
     {
       id: 4,      
@@ -52,6 +56,7 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
+      viewed: "301"
     },
     {
       id: 5,
@@ -64,6 +69,7 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
+      viewed: "301"
     },
     {
       id: 6,
@@ -76,6 +82,7 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
+      viewed: "352"
     },
     {
       id: 7,
@@ -88,6 +95,7 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
+      viewed: "114"
     },
     {
       id: 8,

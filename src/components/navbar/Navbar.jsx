@@ -1,6 +1,7 @@
 import {MenuItems, NavIcons, NavMenu, NavWrapper, Text} from './NavbarStyle'
 import { FaCartPlus, FaUser } from "react-icons/fa"
 import { Link } from 'react-router-dom';
+import MultipleSelect from '../dropdown/dropdown';
 
 
 
@@ -10,7 +11,8 @@ export default function NavbarComp() {
         <NavWrapper>
             <Text>Camper</Text>
             <NavMenu>
-                <MenuItems>                    
+                <MenuItems style={{position:'relative'}}> 
+                               {/* <MultipleSelect/>     */}
                 <select name="cars" id="cars">
                         <option value="motor">Motor</option>
                         <option value="saab">Saab</option>
