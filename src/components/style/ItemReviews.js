@@ -200,6 +200,8 @@ font-weight: 600;
 line-height: normal;
 padding-left: 20px;
 }
+
+
 `
 export const QuestionsRight = styled.div`
 display: flex;
@@ -254,5 +256,59 @@ textarea{
     border: 1px solid var(--text, #373737);
     opacity: 0.05;
     background: var(--text, #373737);
+}
+
+
+`
+export const MapLeft = styled.div`
+display: flex;
+align-items: center;
+flex-direction: column;
+flex: 3;
+margin-right: 69px;
+img{
+    width: 800px;
+ 
+}
+.left{
+    padding: 15px 0 25px 24px;
+    display: flex;
+flex-direction: column;
+flex: 1; 
+height: 109px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.right{
+    padding: 15px 0 21px 24px;
+    margin-left: 30px;
+    display: flex;
+flex-direction: column;
+flex: 1; 
+height: 109px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+p{
+    color: #666;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 18.2px */
+}
+h4{
+    margin-top: 9px;
+    color: var(--txt-color, #1E1C1C);
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%; /* 23.4px */
 }
 `

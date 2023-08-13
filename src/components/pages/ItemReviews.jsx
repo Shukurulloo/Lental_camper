@@ -4,10 +4,11 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { ItemMini, QuestionsLeft, QuestionsRight, WrapItems, WrapLeft, WrapRight, Wrapper } from '../style/ItemReviews';
+import { ItemMini, MapLeft, Mapleft, QuestionsLeft, QuestionsRight, WrapItems, WrapLeft, WrapRight, Wrapper } from '../style/ItemReviews';
 import carData from '../mock/data';
 import { FaChevronDown  } from "react-icons/fa";
 import { Button } from '../style/InfoStyle';
+import chart from '../assets/img/chart.png'
 
 
 function CustomTabPanel(props) {
@@ -15,6 +16,7 @@ function CustomTabPanel(props) {
 
   return (
     <div
+    
       role="tabpanel"
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
@@ -23,7 +25,7 @@ function CustomTabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          <Typography >{children}</Typography>
         </Box>
       )}
     </div>
@@ -51,8 +53,8 @@ export default function ItemReviewsComponent() {
   };
 
   return (
-    <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider', background: 'rgba(0, 109, 171, 0.20)', padding:'0 70px' }}>
+    <Box sx={{ width: '100%', }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider', background: 'rgba(0, 109, 171, 0.20)', padding:'0 100px 0' }}>
 
       <Tabs 
             value={value} 
@@ -60,6 +62,8 @@ export default function ItemReviewsComponent() {
             sx={{ 
               "& button": {
                 color:'#373737',
+               
+                
                 
             },
               "& button:hover": {color:'#FFF', background:'#006DAB'}
@@ -165,7 +169,7 @@ export default function ItemReviewsComponent() {
         </QuestionsLeft>
 
         <QuestionsRight>
-        <div>
+        <div >
           <h1>Have you got a question</h1>
           <input type="text"  placeholder='Your name' style={{color:'red'}}/>
           <input type="email" placeholder='Your email'  />
@@ -176,7 +180,34 @@ export default function ItemReviewsComponent() {
         </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
-        Item Three
+        <div style={{display:'flex'}}>
+      <MapLeft>
+         <img src={chart} alt="" />
+          
+          <div style={{display:'flex', width:'92%', padding: '25px 0px 30px'}}> 
+          <div className='left'>
+            <p>Phone number:</p>
+            <h4>+7 237 181 181<br/>
+            +7 210 181 191</h4>
+         
+          </div>
+          <div className='right'>
+            <p>E-mail:</p>
+            <h4>logo.uz</h4>
+          </div>
+          </div>
+        </MapLeft>
+
+      <QuestionsRight>
+        <div>
+          <h1>Have you got a question</h1>
+          <input type="text"  placeholder='Your name' style={{color:'red'}}/>
+          <input type="email" placeholder='Your email'  />
+          <textarea name="message" id=""  placeholder="Your question"></textarea> 
+          <Button comp style={{backgroundColor:'#006DAB', color:'white', width:'85%', marginTop:'25px'}}>Send question</Button>
+          </div>
+        </QuestionsRight>
+        </div>
       </CustomTabPanel>
       </div>
     </Box>
