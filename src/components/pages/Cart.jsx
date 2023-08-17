@@ -6,8 +6,13 @@ import carData from '../mock/data';
 import { ArrowLeft, ArrowRight, CarouselInner, CarouselWrapper, CostTitle, DescriptionTitle, Flex, FlexLeft, FlexRight, FormAccount, FormCard, FormControl, Text, Title } from '../style/CartStyle';
 import { Button } from '../style/InfoStyle';
 
+
 const CartComp = () => {
   const [currImg, setCurrImg] = useState(0);
+  const photocamper = [
+    "../assets/img/Rectangle 2photo1.png",
+    "../assets/img/Rectangle2camperimg.png"
+  ]
 
   return (
     <div style={{background:' #FAFAFA'}}>
@@ -24,7 +29,7 @@ const CartComp = () => {
                       currImg > 0 && setCurrImg(currImg - 1);
                       }}>
                         <FaArrowLeft style={{color: 'white'}}/>
-            </ArrowLeft>   
+            </ArrowLeft>    
 
             <CarouselInner style={{ backgroundImage:`url(${carData[currImg].photo})` }}>
               <CostTitle><h5>Purchase price:</h5> {carData[currImg].cost}</CostTitle>                

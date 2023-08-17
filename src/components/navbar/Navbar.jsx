@@ -9,7 +9,7 @@ export default function NavbarComp() {
 
     return(
         <NavWrapper>
-            <Text>Camper</Text>
+            <Link to="/mainpage" style={{textDecoration:'none'}}><Text>Camper</Text></Link>
             <NavMenu>
                 <MenuItems style={{position:'relative'}}> 
                                {/* <MultipleSelect/>     */}

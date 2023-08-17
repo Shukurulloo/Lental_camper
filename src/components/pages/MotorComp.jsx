@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import NavbarComp from '../navbar/Navbar';
-import { Button, Col, Flex, Form, GridContainer, GridItems, HeadWrapper, ItemBar, Line, MainWrap, Row, SideBar, Text } from '../style/MotorComponentsStyle';
+import { Button, Col, Flex, Form, GridContainer, GridItems, HeadWrapper, ItemBar, Line, MainWrap, Row,  Text } from '../style/MotorComponentsStyle';
 import carData from '../mock/data';
 import { Link } from 'react-router-dom';
 import { FaStar, FaThLarge, FaThList } from 'react-icons/fa';
 import FooterComp from '../footer/Footer';
+import Sidebar from '../Sidebar/Sidebar';
 
 
 
@@ -34,119 +35,7 @@ const MotorComponents = () => {
         <h1>Motors</h1>
       </HeadWrapper>
       <MainWrap>
-        <SideBar>
-          <Col cost>
-            <Text>Cost of car</Text>
-            <div style={{display:'flex', marginTop:'30px'}}>
-              <div style={{display:'flex', flexDirection:'column'}}>
-              <label htmlFor="">from</label>
-              <input type="text" />
-              </div>
-              <div style={{display:'flex', flexDirection:'column', marginLeft:'25px'}}>
-              <label htmlFor="">to</label>
-              <input type="text" />
-              </div>
-            </div>
-          </Col>
-          <Col brand>
-            <select name="" id="" style={{color: '#373737', fontWeight: '600', fontSize: '18px', border:'none', background:'transparent' }}>
-              <option value="">Brand</option>
-            </select>
-            <Line></Line>    
-            <Form>       
-              <div className="form-group">
-                <input type="checkbox" name="brand" style={{borderRadius:'120px'}} />
-                <label htmlFor="">Aidal</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">Knal</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">escape</label>
-              </div>                
-            </Form>                                 
-          </Col>
-          <Col company>
-            <select name="" id="" style={{color: '#373737', fontWeight: '600', fontSize: '18px', border:'none', background:'transparent' }}>
-              <option value="">Company</option>
-            </select>
-            <Line></Line>    
-            <Form>       
-              <div className="form-group">
-                <input type="checkbox" name="brand" onClick={handleClick} />
-                <label htmlFor="">escape</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">Aidal</label>
-              </div>                             
-            </Form>                                 
-          </Col>
-          <Col license>
-            <select name="" id="" style={{color: '#373737', fontWeight: '600', fontSize: '18px', border:'none', background:'transparent' }}>
-              <option value="">License type</option>
-            </select>
-            <Line></Line>    
-            <Form>       
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">1 year</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">2 year</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">1.5 year</label>
-              </div>                
-            </Form>                                 
-          </Col>
-          <Col travelers>
-            <select name="" id="" style={{color: '#373737', fontWeight: '600', fontSize: '18px', border:'none', background:'transparent' }}>
-              <option value="">Number of travelers</option>
-            </select>
-            <Line></Line>    
-            <Form>       
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">2</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">3-4</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">5+</label>
-              </div>                
-            </Form>                                 
-          </Col>
-          <Col location>
-            <select name="" id="" style={{color: '#373737', fontWeight: '600', fontSize: '18px', border:'none', background:'transparent' }}>
-              <option value="">Location</option>
-            </select>
-            <Line></Line>    
-            <Form>       
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">Seoul</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">Daegu</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">Busan</label>
-              </div>                
-            </Form>                                 
-          </Col>
-          <Button cnl>Cancel</Button>
-          <Button srch bg='#006DAB' style={{marginLeft:'8px'}}>Search</Button>
-        </SideBar>
+      <Sidebar />
         <ItemBar>
           <Row>
             

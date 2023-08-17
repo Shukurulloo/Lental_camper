@@ -9,6 +9,7 @@ import carData from '../mock/data';
 import { FaChevronDown  } from "react-icons/fa";
 import { Button } from '../style/InfoStyle';
 import chart from '../assets/img/chart.png'
+import BasicAccordion from './Accordion';
 
 
 function CustomTabPanel(props) {
@@ -151,34 +152,24 @@ export default function ItemReviewsComponent() {
         </WrapRight>
         </div>
       </CustomTabPanel>
+
       <CustomTabPanel value={value} index={2}>
       <div style={{display:'flex'}}>
-        <QuestionsLeft>
-          <div className=''> <h3>Frequently asked questions </h3>
-          <FaChevronDown style={{color:'#006DAB', marginRight:'20px'}}/></div>
-          <div className=''> <h3>Frequently asked questions </h3>
-          <FaChevronDown style={{color:'#006DAB', marginRight:'20px'}}/></div>
-          <div className=''> <h3>Frequently asked questions </h3>
-          <FaChevronDown style={{color:'#006DAB', marginRight:'20px'}}/></div>
-          <div className=''> <h3>Frequently asked questions </h3>
-          <FaChevronDown style={{color:'#006DAB', marginRight:'20px'}}/></div>
-          <div className=''> <h3>Frequently asked questions </h3>
-          <FaChevronDown style={{color:'#006DAB', marginRight:'20px'}}/></div>
-          <div className=''> <h3>Frequently asked questions </h3>
-          <FaChevronDown style={{color:'#006DAB', marginRight:'20px'}}/></div>
-        </QuestionsLeft>
-
-        <QuestionsRight>
-        <div >
-          <h1>Have you got a question</h1>
+      <BasicAccordion />
+      <WrapRight style={{marginLeft:'30px'}}>
+        <div style={{height: '482px'}}>
+          <h1>Send a question</h1>
           <input type="text"  placeholder='Your name' style={{color:'red'}}/>
           <input type="email" placeholder='Your email'  />
           <textarea name="message" id=""  placeholder="Your question"></textarea> 
           <Button comp style={{backgroundColor:'#006DAB', color:'white', width:'85%', marginTop:'25px'}}>Send question</Button>
           </div>
-        </QuestionsRight>
+        </WrapRight>
         </div>
-      </CustomTabPanel>
+
+</CustomTabPanel>
+
+
       <CustomTabPanel value={value} index={3}>
         <div style={{display:'flex'}}>
       <MapLeft>
@@ -199,7 +190,7 @@ export default function ItemReviewsComponent() {
         </MapLeft>
 
       <QuestionsRight>
-        <div>
+        <div >
           <h1>Have you got a question</h1>
           <input type="text"  placeholder='Your name' style={{color:'red'}}/>
           <input type="email" placeholder='Your email'  />

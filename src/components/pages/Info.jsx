@@ -4,10 +4,16 @@ import FooterComp from '../footer/Footer';
 import content from '../mock/content';
 import CardComp from './Card';
 import { Link, useParams } from 'react-router-dom';
-
 import { Button, DetailWrap, FlexDown, FlexUp, HeadWrapper, ItemInfo, MainWrapper } from '../style/InfoStyle';
 import carData from '../mock/data';
 import ItemReviewsComponent from './ItemReviews';
+import BasicAccordion from './Accordion';
+import Bounce from "react-reveal/Bounce";
+import Zoom from 'react-reveal/Zoom';
+import Slide from 'react-reveal/Slide';
+
+
+
 
 const CarInfo = () => {
 
@@ -30,13 +36,16 @@ const CarInfo = () => {
       </HeadWrapper>
 
       <MainWrapper>
+    <Zoom>
       <DetailWrap >
 
 
 <img src={singleCarData.photo} alt="campingCar" style={{width:'50%', height:'100%'}}/>
 
 <ItemInfo>
-  <FlexUp>              
+
+  <FlexUp>  
+            
     <div style={{display:'flex', flexDirection:'column'}} >
       <h2>{singleCarData.name}</h2>
       <p>{singleCarData.date}</p>
@@ -44,6 +53,7 @@ const CarInfo = () => {
     <div style={{paddingLeft:'22%'}}>
         <h1>{singleCarData.cost}W</h1>
     </div>
+
   </FlexUp>
   <FlexDown>
     <div>
@@ -55,23 +65,29 @@ const CarInfo = () => {
     </div>
     <div>
       <ul style={{fontWeight:'400' ,}}>
-        <li>{singleCarData.company}</li>
+        <li>{singleCarData.company}</li>  
         <li>{singleCarData.people}</li>
         <li>{singleCarData.license}</li>
       </ul>
     </div>
   </FlexDown>
-</ItemInfo>          
-</DetailWrap>         
+
+</ItemInfo> 
+</DetailWrap>
+</Zoom>      
+
         <div>{content.map((item, index) => (
-          <CardComp key={index} item={item}/>))}
+             <Slide left> <CardComp key={index} item={item}/> </Slide> ))}
         </div>
         <div style={{paddingLeft:'70px', marginTop:'-130px', marginBottom:'154px'}}>
           <Button add style={{marginRight:'12px'}}>ADD TO CART</Button>
           <Button comp style={{border:'2px solid #006DAB', color:'#006DAB'}}>COMPARE</Button>
-        </div>
+        </div>   
+       
       </MainWrapper>  
-      <ItemReviewsComponent/>       
+     
+      <ItemReviewsComponent/> 
+  
       <FooterComp/>
     </div>
   )

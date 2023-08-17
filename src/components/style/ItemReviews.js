@@ -148,9 +148,9 @@ input{
     height: 50px;
     flex-shrink: 0;
     border-radius: 8px;
-    border: 1px solid var(--text, #373737);
-    opacity: 0.05;
-    background: var(--text, #373737);
+    border: none;
+    padding-left: 10px;
+    background: rgba(55, 55, 55, 0.10);
     color: red;
     font-family: Montserrat;
     font-size: 14px;
@@ -165,9 +165,10 @@ textarea{
     height: 120px;
     flex-shrink: 0;
     border-radius: 8px;
-    border: 1px solid var(--text, #373737);
-    opacity: 0.05;
-    background: var(--text, #373737);
+    border: none;
+    padding: 10px;
+    background: rgba(55, 55, 55, 0.10);
+
 }
 
 `
@@ -181,15 +182,17 @@ flex: 3;
 
 div{
     display: flex;
+    flex-direction: column;
     align-items: center;
-width: 90%;
-height: 60px;
-flex-shrink: 0;
-border-radius: 10px;
-background: #FFF;
-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.10);
-justify-content: space-between;
-margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+    height: 482px;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 109, 171, 0.10);
+    background: #FFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
 }
 h3{
     color: var(--text, #373737);
@@ -215,6 +218,7 @@ div{
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 482px;
     height: 100%;
     flex-shrink: 0;
     border-radius: 10px;
@@ -236,9 +240,9 @@ input{
     height: 50px;
     flex-shrink: 0;
     border-radius: 8px;
-    border: 1px solid var(--text, #373737);
-    opacity: 0.05;
-    background: var(--text, #373737);
+    border: none;
+    padding-left: 10px;
+    background: rgba(55, 55, 55, 0.10);
     color: red;
     font-family: Montserrat;
     font-size: 14px;
@@ -253,9 +257,9 @@ textarea{
     height: 120px;
     flex-shrink: 0;
     border-radius: 8px;
-    border: 1px solid var(--text, #373737);
-    opacity: 0.05;
-    background: var(--text, #373737);
+    border: none;
+    padding-left: 10px;
+    background: rgba(55, 55, 55, 0.10);
 }
 
 
