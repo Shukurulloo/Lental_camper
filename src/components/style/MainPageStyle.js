@@ -23,7 +23,25 @@ h2{
 }
 `
 export const ImgWrapper = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction:column;
+width: 100%;
+margin-top: 100px;
 
+
+h4{
+
+color: var(--text, #373737);
+font-family: Gilroy;
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+border-bottom: 3px solid #FF7A00;
+margin-bottom: 80px;
+}
 
 `
 

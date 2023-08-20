@@ -14,25 +14,25 @@ export default class SimpleSlider extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-
+      
     };
     return (
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100%',height:'px', background:'#e0e5e8' }}>
-      <div style={{width:'1px', width:'1566px', background:''}}>
+      
+   
         <Slider {...settings}>
             
-          <img src={simplephoto} alt="" style={{width:'100%', height:'1066px',}} />
+          <img src={simplephoto} alt="" style={{}} />
         
 
-          <img src={simplephoto2} alt="" style={{width:'100%',height:'566px'}} />
+          <img src={simplephoto2} alt="" style={{}} />
           
 
-          <img src={simplephoto} alt="" style={{width:'100%', height:'566px'}}/>
+          <img src={simplephoto} alt="" style={{}}/>
           
      
         </Slider>
-      </div>
-      </div>
+    
+     
     );
   }
 }
