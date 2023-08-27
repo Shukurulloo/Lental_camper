@@ -10,6 +10,7 @@ import { FaChevronDown  } from "react-icons/fa";
 import { Button } from '../style/InfoStyle';
 import chart from '../assets/img/chart.png'
 import BasicAccordion from './Accordion';
+import KakaoMap from './kakaoMap';
 
 
 function CustomTabPanel(props) {
@@ -173,7 +174,8 @@ export default function ItemReviewsComponent() {
       <CustomTabPanel value={value} index={3}>
         <div style={{display:'flex'}}>
       <MapLeft>
-         <img src={chart} alt="" />
+      <KakaoMap/>
+         {/* <img src={chart} alt="" /> */}
           
           <div style={{display:'flex', width:'92%', padding: '25px 0px 30px'}}> 
           <div className='left'>

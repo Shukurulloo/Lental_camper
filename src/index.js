@@ -11,6 +11,8 @@ import UseReducers from './components/pages/UseReducer';
 import MainPage from './components/pages/MainPage';
 import CaruselApp from './components/assets/slides/CaruselApp';
 import SimpleSlider from './components/assets/slides/CaruselApp';
+import WrapMotor from './components/motorPage/MotorCompIcon';
+import PopUpMain from './components/popup/popup';
 
 
 
@@ -19,8 +21,9 @@ root.render(
   
     <BrowserRouter>
       <Routes>
-      
-      {/* <Route path="/app" element={< SimpleSlider/>} /> */}
+      <Route path="/popup" element={<PopUpMain/>} />
+
+      <Route path="/app" element={<  WrapMotor/>} />
       <Route path="/mainpage" element={< MainPage/>} />
       <Route path="/" element={<MotorComponents/>} />
       <Route path="/info/:id" element={<CarInfo/>} />

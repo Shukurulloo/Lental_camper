@@ -48,7 +48,7 @@ margin-bottom: 80px;
 export const VideosWrap = styled.div`
 display: grid;
 grid-template-rows:${({gridrw}) => gridrw || 'repeat(8, 100%))'};
-grid-template-columns:${({gridcl}) => gridcl || 'repeat(4, 1fr)'} ;
+grid-template-columns:${({gridcl}) => gridcl || 'repeat(4, 2fr)'} ;
 gap: 20.1px;
 width: 100%;
 align-items: center;

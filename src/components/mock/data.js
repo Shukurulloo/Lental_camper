@@ -2,7 +2,11 @@ import camping1 from '../../assets/img/camping1.png';
 import camping2 from '../../assets/img/camping2.png';
 import camping3 from '../../assets/img/camping3.png';
 import camping4 from '../../assets/img/camping4.png';
-
+import caravan1 from '../assets/img/caravan1.png'
+import caravan2 from '../assets/img/caravan2.jpeg'
+import caravan3 from '../assets/img/caravan3.jpeg'
+import caravan4 from '../assets/img/caravan4.jpeg'
+import caravan5 from '../assets/img/caravan5.png'
 
 const carData = [
     {     
@@ -16,7 +20,8 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
-      viewed: "221"
+      viewed: "221",
+      url: caravan1
     },    
     {      
       id: 2,
@@ -29,7 +34,8 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
-      viewed: "352"
+      viewed: "352",
+      url: caravan2
     
     },    
     {      
@@ -43,7 +49,8 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
-      viewed: "114"
+      viewed: "114",
+      url: caravan3
     },    
     {
       id: 4,      
@@ -56,7 +63,8 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
-      viewed: "301"
+      viewed: "301",
+      url: caravan4
     },
     {
       id: 5,
@@ -69,7 +77,8 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
-      viewed: "301"
+      viewed: "301",
+      url: caravan5
     },
     {
       id: 6,

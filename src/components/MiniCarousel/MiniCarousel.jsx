@@ -1,10 +1,9 @@
 import React, {Component} from "react";
 import Carousel from 'react-elastic-carousel';
-
-import { Button, CarouselItems, div, WrapNew } from "./MiniCarousel.Style";
+import { Button, CarouselItems,  WrapNew } from "./MiniCarousel.Style";
 import carData from "../mock/data";
 import CarouselAccordion from "./MInICarouselAc";
-// import car1 from '../../assets/main/carouselcamp.png';
+
 
 
 const breakPoints = [
