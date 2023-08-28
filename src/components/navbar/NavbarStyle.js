@@ -41,7 +41,7 @@ button{
 }
 
 div{
-width: 100%;
+    width: 100%;
     background-color: #FFF;
     left: 0;
     z-index: 20;
@@ -52,7 +52,7 @@ width: 100%;
     padding: 12px 12px;
     border-top: 1px solid red;
     display: flex;
-    
+
     align-items: center;
     justify-content: space-between;
 
@@ -74,6 +74,18 @@ span{
     color: var(--text, #373737);
     font-size: 16px;
     line-height: normal;
+}
+.seeAll{
+     font-family: Montserrat; 
+     font-weight: 600;
+     font-size:18px;
+     color:white;
+     border-radius:30px;
+     background:blue;
+     padding: 10px 10px 10px 15px;
+&:hover{
+    background-color: #0040ff;
+}
 }
 `
 

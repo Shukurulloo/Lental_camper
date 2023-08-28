@@ -7,6 +7,7 @@ import carData from '../mock/data';
 import caravanData from '../mock/caravanData';
 import TuningData from '../mock/tuningCar';
 import UsedCar from '../mock/usedCar';
+import { ImArrowRight2 } from "react-icons/im";
 
 
 const reducer = (state, action) => {
@@ -42,14 +43,16 @@ export default function NavbarComp() {
                         <div>
                             {carData.slice(0,5).map((item) => {
                             return (
-                                <>
+                               <>
                                     <img src={item.photo} alt="" width='15%'/>
-                                </>
+                                    <p>{item.name}</p>
+                                    </>
+                                
                             )
                         })}
                 
                 
-                  <button class="see-all-button">See all</button>
+                <Link to='/motor' style={{textDecoration:'none'}}><button className='seeAll' >See all     </button></Link>
             
                             
                         
@@ -73,7 +76,7 @@ export default function NavbarComp() {
                         })}
                 
                 
-                  <button class="see-all-button">See all</button>
+                <Link to='/caravancomponents' style={{textDecoration:'none'}}><button className='seeAll' style={{}}>See all <ImArrowRight2 style={{margin:'0 11px 0 10px'}}/> </button></Link>
             
                             
                         
@@ -97,7 +100,7 @@ export default function NavbarComp() {
                         })}
                 
                 
-                  <button class="see-all-button">See all</button>
+                <Link to='/tuningcomponents' style={{textDecoration:'none'}}><button className='seeAll' style={{}}>See all <ImArrowRight2 style={{margin:'0 11px 0 10px'}}/> </button></Link>
             
                             
                         
@@ -122,7 +125,7 @@ export default function NavbarComp() {
                         })}
                 
                 
-                  <button >See all</button>
+                <Link to='/usedcomponents' style={{textDecoration:'none'}}><button className='seeAll' style={{}}>See all <ImArrowRight2 style={{margin:'0 11px 0 10px'}}/> </button></Link>
             
                             
                         

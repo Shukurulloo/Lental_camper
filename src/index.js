@@ -13,6 +13,10 @@ import CaruselApp from './components/assets/slides/CaruselApp';
 import SimpleSlider from './components/assets/slides/CaruselApp';
 import WrapMotor from './components/motorPage/MotorCompIcon';
 import PopUpMain from './components/popup/popup';
+import CaravanComponents from './components/pages/CaravanComp';
+import TuningComponents from './components/pages/TuningComp';
+import UsedComponents from './components/pages/UsedComp';
+import CampinPlaceMap from './components/pages/CampinPlace.map';
 
 
 
@@ -22,13 +26,18 @@ root.render(
     <BrowserRouter>
       <Routes>
       <Route path="/popup" element={<PopUpMain/>} />
-
+      
+      
       <Route path="/app" element={<  WrapMotor/>} />
       <Route path="/mainpage" element={< MainPage/>} />
-      <Route path="/" element={<MotorComponents/>} />
+      <Route path="/motor" element={<MotorComponents/>} />
+      <Route path="/caravancomponents" element={<CaravanComponents/>} />
+      <Route path="/tuningcomponents" element={<TuningComponents/>} />
+      <Route path="/usedcomponents" element={<UsedComponents/>} />
       <Route path="/info/:id" element={<CarInfo/>} />
       <Route path="/cart" element={<CartComp/>} />
       <Route path="/campingplaces" element={<CampingPlaceComp/>} />
+      <Route path="/campinplacemap" element={<CampinPlaceMap/>} />
       </Routes>
     </BrowserRouter>
     

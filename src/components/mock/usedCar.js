@@ -11,7 +11,7 @@ import usedCar5 from '../assets/img/usedCar5.jpeg'
 const UsedCar = [
     {     
       id: 1,
-      photo: camping1,
+      photo: usedCar1,
       name: "르벤투스S+",
       cost: "90,200,000",
       type: "르노마스터",
@@ -25,7 +25,7 @@ const UsedCar = [
     },    
     {      
       id: 2,
-      photo: camping2,
+      photo: usedCar2,
       name: "르벤투스680S",
       cost: "93,700,000",
       type: "르노마스터",
@@ -40,7 +40,7 @@ const UsedCar = [
     },    
     {      
       id: 3,
-      photo: camping3,
+      photo: usedCar3,
       name: "르벤투스680",
       cost: "93,700,000",
       type: "르노마스터",
@@ -54,7 +54,7 @@ const UsedCar = [
     },    
     {
       id: 4,      
-      photo: camping4,
+      photo: usedCar4,
       name: "르벤투스 차박S",
       cost: "66,100,000",
       type: "르노마스터",
@@ -68,7 +68,7 @@ const UsedCar = [
     },
     {
       id: 5,
-      photo: camping1,
+      photo: usedCar5,
       name: "포스650",
       cost: "85,300,000",
       type: "포터",
@@ -82,7 +82,7 @@ const UsedCar = [
     },
     {
       id: 6,
-      photo: camping2,
+      photo: usedCar1,
       name: "포스560",
       cost: "93,700,000",
       type: "포터",
@@ -95,7 +95,7 @@ const UsedCar = [
     },
     {
       id: 7,
-      photo: camping3,
+      photo: usedCar2,
       name: "올카",
       cost: "62,600,000",
       type: "포터",
@@ -108,7 +108,7 @@ const UsedCar = [
     },
     {
       id: 8,
-      photo: camping4,
+      photo: usedCar3,
       name: "DS9eR+a",
       cost: "77,900,000",
       type: "봉고",
@@ -120,7 +120,7 @@ const UsedCar = [
     },
     {
       id: 9,
-      photo: camping1,
+      photo: usedCar4,
       name: "DS9eU+a",
       cost: "75,200,000",
       type: "봉고",
@@ -132,7 +132,7 @@ const UsedCar = [
     },
     {
       id: 10,
-      photo: camping2,
+      photo: usedCar5,
       name: "ACIER 790R",
       cost: "122,800,000",
       type: "이베코 뉴데일리",
@@ -144,7 +144,7 @@ const UsedCar = [
     },
     {
       id: 11,
-      photo: camping3,
+      photo: usedCar1,
       name: "ACIER 900 Deluxe",
       cost: "142,800,000",
       type: "이베코 뉴데일리",
@@ -156,7 +156,7 @@ const UsedCar = [
     },
     {
       id: 12,
-      photo: camping4,
+      photo: usedCar2,
       name: "ST-7",
       cost: "89,000,000",
       type: "봉고",
@@ -168,7 +168,7 @@ const UsedCar = [
     },
     {
       id: 13,
-      photo: camping1,
+      photo: usedCar3,
       name: "트레블라인 660",
       cost: "76,000,000",
       type: "르노마스터",
@@ -180,7 +180,7 @@ const UsedCar = [
     },
     {
       id: 14,
-      photo: camping2,
+      photo: usedCar4,
       name: "트레블라인 550",
       cost: "60,000,000",
       type: "르노마스터",
@@ -192,7 +192,7 @@ const UsedCar = [
     },
     {
       id: 15,
-      photo: camping3,
+      photo: usedCar5,
       name: "트레블라인 650,",
       cost: "68,900,000",
       type: "봉고",
@@ -204,7 +204,7 @@ const UsedCar = [
     },
     {
       id: 16,
-      photo: camping4,
+      photo: usedCar1,
       name: "트레블라인 350",
       cost: "59,900,000",
       type: "봉고",
@@ -216,7 +216,7 @@ const UsedCar = [
     },
     {
       id: 17,
-      photo: camping1,
+      photo: usedCar2,
       name: "트레블라인 250,",
       cost: "49,000,000",
       type: "포터",
@@ -228,7 +228,7 @@ const UsedCar = [
     },
     {
       id: 18,
-      photo: camping2,
+      photo: usedCar3,
       name: "트레블라인 220",
       cost: "39,000,000",
       type: "포터",
@@ -240,7 +240,7 @@ const UsedCar = [
     },
     {
       id: 19,
-      photo: camping3,
+      photo: usedCar4,
       name: "HWC560DL",
       cost: "61,000,000",
       type: "포터",
@@ -252,7 +252,7 @@ const UsedCar = [
     },
     {
       id: 20,
-      photo: camping4,
+      photo: usedCar5,
       name: "HWC620DL",
       cost: "76,000,000",
       type: "봉고",
@@ -264,7 +264,7 @@ const UsedCar = [
     },
     {
       id: 21,
-      photo: camping1,
+      photo: usedCar1,
       name: "HWC620DL",
       cost: "76,000,000",
       type: "봉고",
@@ -276,7 +276,7 @@ const UsedCar = [
     },
     {
       id: 22,
-        photo: camping2,
+        photo: usedCar2,
         name: "HWC680L",
         cost: "75,000,000",
         type: "르노마스터",
@@ -288,7 +288,7 @@ const UsedCar = [
     },
     {
       id: 23,
-        photo: camping3,
+        photo: usedCar3,
         name: "HWC680DL",
         cost: "77,000,000",
         type: "르노마스터",
@@ -297,6 +297,18 @@ const UsedCar = [
         date: "22년 03월",
         company: "한울캠핑카",
         location: "경상권",
+    },
+    {
+      id: 24,
+      photo: usedCar4,
+      name: "트레블라인 220",
+      cost: "39,000,000",
+      type: "포터",
+      license: "2종 보통",
+      people: "3인",
+      date: "22년 03월",
+      company: "영남캠핑카",
+      location: "경상권",
     }
 ]
 
