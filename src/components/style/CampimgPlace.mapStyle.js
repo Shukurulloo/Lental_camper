@@ -4,7 +4,6 @@ import { styled } from "styled-components";
 export const ContainerMap = styled.div`
 display: flex;
 align-items: center;
-justify-content: center;
 width: 100%;
 flex-direction: column;
 `
@@ -68,8 +67,9 @@ h1{
 `
 export const AddressWrap = styled.div`
     display: flex;
-    align-items: center;
-    justify-content: left;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
 
 
@@ -87,10 +87,42 @@ h3{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-left: 10px;
 }
+a{
+    text-align:center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 10px;
+}
+
 .right{
+    margin-left: 100px;
     display: flex;
     align-items: left;
     flex-direction: column;
+}
+h4{
+        color: var(--blue, #006DAB);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 20px;
+    }
+p{
+    color: var(--text, #373737);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+
+    
 }
 `

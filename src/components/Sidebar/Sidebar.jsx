@@ -2,8 +2,7 @@ import React from 'react'
 import SidebarAccordion from './SidebarAc'
 import { Button, Col, Form, Line, SideBarStyle, Text, WrCompare } from './Sidebar.style'
 import SidImg1 from '../assets/img/Rectangle 705compareSidebar.png'
-import SidImg2 from '../assets/img/c acompareSidebar2.png'
-import SidImg3 from '../assets/img/22 1compareSidebar3.png'
+
 
 
 
