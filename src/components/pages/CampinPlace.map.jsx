@@ -6,7 +6,7 @@ import placeContent from '../mock/campingPlace'
 import { HiOutlinePhone , HiOutlineLocationMarker} from "react-icons/hi";
 import { MdAccessTime } from "react-icons/md";
 import { VscHome } from "react-icons/vsc";
-
+import Zoom from 'react-reveal/Zoom';
 
 
 
@@ -14,7 +14,7 @@ const CampinPlaceMap = () => {
   return (
         <ContainerMap>
             <NavbarComp/> 
-                <WrapImg>
+                <WrapImg> <Zoom>
                 {placeContent.slice(0,6).map((item) => {
                             return (
                                 <div >
@@ -22,6 +22,7 @@ const CampinPlaceMap = () => {
                                 </div>
                             )
                         })}
+                        </Zoom>
                 </WrapImg>
             <LocationWrap>
             <h1>Camping Del Sole Village</h1>

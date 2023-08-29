@@ -138,7 +138,7 @@ export default function NavbarComp() {
             </NavMenu>
             <NavIcons>
                 <FaCartPlus style={{color:'#006DAB'}}/>
-                <FaUser style={{marginLeft:'25px', color:'#006DAB'}}/>
+               <Link to="/signin"> <FaUser  style={{marginLeft:'25px', color:'#006DAB'}}/></Link>
                 <select name="language" id="language" style={{border:'none', marginLeft:'25px'}}>
                         <option value="english">En</option>
                         <option value="russian">Rus</option>

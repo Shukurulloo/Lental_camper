@@ -6,17 +6,14 @@ import MotorComponents from './components/pages/MotorComp';
 import CartComp from './components/pages/Cart';
 import CampingPlaceComp from './components/pages/CampingPlace';
 import CarInfo from './components/pages/Info';
-import BasicAccordion from './components/pages/Accordion';
-import UseReducers from './components/pages/UseReducer';
 import MainPage from './components/pages/MainPage';
-import CaruselApp from './components/assets/slides/CaruselApp';
-import SimpleSlider from './components/assets/slides/CaruselApp';
 import WrapMotor from './components/motorPage/MotorCompIcon';
-import PopUpMain from './components/popup/popup';
 import CaravanComponents from './components/pages/CaravanComp';
 import TuningComponents from './components/pages/TuningComp';
 import UsedComponents from './components/pages/UsedComp';
 import CampinPlaceMap from './components/pages/CampinPlace.map';
+import SignInPage from './components/pages/SignInPage';
+import RegistratePage from './components/pages/RegistratePage';
 
 
 
@@ -25,9 +22,8 @@ root.render(
   
     <BrowserRouter>
       <Routes>
-      <Route path="/popup" element={<PopUpMain/>} />
-      
-      
+      <Route path="/registrate" element={<RegistratePage/>} />
+      <Route path="/signin" element={<SignInPage/>} />
       <Route path="/app" element={<  WrapMotor/>} />
       <Route path="/mainpage" element={< MainPage/>} />
       <Route path="/motor" element={<MotorComponents/>} />

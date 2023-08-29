@@ -3,7 +3,7 @@
     import Popup from 'reactjs-popup';
     import { FaTimes } from 'react-icons/fa';
     import 'reactjs-popup/dist/index.css';
-    import { hover } from '@testing-library/user-event/dist/hover';
+    import { Media } from '../mock/popup';
 
         const closeButtonStyle = {
 
