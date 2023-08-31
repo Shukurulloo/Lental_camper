@@ -47,13 +47,12 @@ margin-bottom: 80px;
 
 export const VideosWrap = styled.div`
 display: grid;
-grid-template-rows:${({gridrw}) => gridrw || 'repeat(8, 100%))'};
-grid-template-columns:${({gridcl}) => gridcl || 'repeat(4, 2fr)'} ;
+grid-template-rows:${({gridrw}) => gridrw || ''};
+grid-template-columns:${({gridcl}) => gridcl || ''} ;
 gap: 20.1px;
 width: 100%;
-align-items: center;
 margin-top:40px;
-padding-left:${({pdleft}) => pdleft || '1.4%'};
+padding-left:${({pdleft}) => pdleft || '1.3%'};
 margin-bottom:${({mgbt}) => mgbt || '0%'};
 
 

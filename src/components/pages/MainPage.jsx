@@ -3,19 +3,18 @@ import NavbarComp from '../navbar/Navbar'
 import FooterComp from '../footer/Footer'
 import { BlogsWrap, ContainerMain, ImgWrapper, LoremWrapLeft, LoremWrapRight, VideosWrap } from '../style/MainPageStyle'
 import SimpleSlider from '../assets/slides/CaruselApp'
-import vidImg1 from '../assets/img/Rectangle 14videos.png'
+import vidImg1 from '../Media/kakaotalk_1624528840044.mp4'
+import vidImg from '../assets/img/Rectangle 14videos.png'
 import vidImg2 from '../assets/img/Rectangle 15videos2.png'
 import vidImg3 from '../assets/img/Rectangle 16videos3.png'
 import vidImg4 from '../assets/img/Rectangle 17videos4.png'
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Slider from 'infinite-react-carousel';
-import simplephoto from '../assets/img/Rectangle2camperimg.png';
-import simplephoto2 from '../assets/img/Rectangle 2photo1.png';
 import MiniCarousel from '../MiniCarousel/MiniCarousel'
 import PopUpMain from '../popup/popup'
+import PopupComp from '../popup/popup'
+import PopupApp from '../popup/popup'
 
 
 
@@ -28,7 +27,7 @@ const MainPage = () => {
     <ContainerMain>
         <NavbarComp/>
         {/* <Slider/> */}
-        <Fade bottom> <div style={{width:'100%'}}><SimpleSlider/></div></Fade>
+        <Fade bottom> <div style={{width:'100%',height:''}}><SimpleSlider/></div></Fade>
        <ImgWrapper>
        <h4>Recommend</h4>
       <MiniCarousel/>
@@ -37,22 +36,12 @@ const MainPage = () => {
           <h2>Videos</h2>
           <div style={{display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column', width:'100%',padding:'50px'}} >
       
-      =
-        <VideosWrap >
-        <Fade bottom >
-              <PopUpMain imgSrc={vidImg1} />
-              <PopUpMain imgSrc={vidImg2} />
-              <PopUpMain imgSrc={vidImg3} />
-              <PopUpMain imgSrc={vidImg4} />
-              
 
-              <PopUpMain imgSrc={vidImg1} />
-              <PopUpMain imgSrc={vidImg2} />
-              <PopUpMain imgSrc={vidImg3} />
-              <PopUpMain imgSrc={vidImg4} />
-              </Fade>
-            </VideosWrap>
-        
+            <div style={{position:'relative', width:'100%', padding:'1%' }}>
+             <PopupApp/>
+             </div>
+            
+            
         </div>
         <BlogsWrap  >
         <Zoom > 
@@ -66,13 +55,13 @@ const MainPage = () => {
 
         <LoremWrapRight >
         <VideosWrap pdleft='0px' gridrw='repeat(, 100%)' gridcl='repeat(3, 1fr)'  >
-              <PopUpMain imgSrc={vidImg1} />
-              <PopUpMain imgSrc={vidImg3} />
-              <PopUpMain imgSrc={vidImg4} />
+          <img src={ vidImg}  alt="" style={{width:'100%'}}/>
+          <img src={ vidImg3} alt="" style={{width:'100%'}}/>
+          <img src={ vidImg4} alt="" style={{width:'100%'}} />
 
-              <PopUpMain imgSrc={vidImg1} />
-              <PopUpMain imgSrc={vidImg3} />
-              <PopUpMain imgSrc={vidImg4} />
+          <img src={ vidImg} alt="" style={{width:'100%'}}/>
+          <img src={ vidImg3} alt="" style={{width:'100%'}}/>
+          <img src={ vidImg4} alt="" style={{width:'100%'}} />
             </VideosWrap>
           </LoremWrapRight>
           </div>

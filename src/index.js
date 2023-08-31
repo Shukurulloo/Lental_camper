@@ -14,6 +14,9 @@ import UsedComponents from './components/pages/UsedComp';
 import CampinPlaceMap from './components/pages/CampinPlace.map';
 import SignInPage from './components/pages/SignInPage';
 import RegistratePage from './components/pages/RegistratePage';
+import { SampleComponent } from './components/popup/testPopUp';
+import PopupComp from './components/popup/popup';
+
 
 
 
@@ -22,6 +25,9 @@ root.render(
   
     <BrowserRouter>
       <Routes>
+      <Route path="/popup1" element={ <PopupComp/>} />
+
+
       <Route path="/registrate" element={<RegistratePage/>} />
       <Route path="/signin" element={<SignInPage/>} />
       <Route path="/app" element={<  WrapMotor/>} />

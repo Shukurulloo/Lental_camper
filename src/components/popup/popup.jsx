@@ -1,30 +1,40 @@
+import React from 'react';
+import Media from '../mock/popupData';
+import { Container } from './popupStyle';
+import { useState } from 'react';
 
-    import React from 'react';
-    import Popup from 'reactjs-popup';
-    import { FaTimes } from 'react-icons/fa';
-    import 'reactjs-popup/dist/index.css';
-    import { Media } from '../mock/popup';
+const PopupApp = () => {
+    const [file, setFile] = useState(null);
 
-        const closeButtonStyle = {
-
-
-        cursor: 'pointer',
-        
-        }
-
-    const PopUpMain = ({ imgSrc }) => (
-    <Popup  trigger={<img src={imgSrc} alt="" style={{ width: '100%', borderRadius:'30px'}} />} modal>
-        {close => (
-        <div className="modal" >
-            <button className="close" onClick={close} style={closeButtonStyle}>
-            <FaTimes style={{ fontSize: '20px' }} />
-            </button>
-            <div className="content">
-            <img src={imgSrc} alt="" style={{ width: '100%' }} />
+    return (
+        <Container>
+            <div className="media-container">
+                {
+                    Media.map((file, index)=> (
+                        <div className="media" key={index} onClick={() => setFile(file)}>
+                            {
+                                file.type === 'image'
+                                ? <img src={file.url} alt="" />
+                                // add #t=0.001 to load video thumbnail on mobile
+                                : <video style={{width:'100%'}} src={`${file.url}#t=0.001`} muted preload='metadata'/>
+                            }
+                        </div>
+                    ))
+                }
             </div>
-        </div>
-        )}
-    </Popup>
-    );
 
-    export default PopUpMain;
+            <div className="popup-media" style={{ display: file ? 'block' : 'none' }}>
+                <span onClick={() => setFile(null)}>&times;</span>
+
+                {
+                    file?.type === 'video'
+                    ? <video style={{height:'50%'}} src={file?.url} muted autoPlay controls/>
+                    : <img src={file?.url} alt="" />
+                }
+
+            </div>
+        </Container>
+    )
+}
+
+export default PopupApp;
