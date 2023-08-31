@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import motorBgImage from '../../assets/motorBgImage.png'
 
+
 export const HeadWrapper = styled.div`
 background-image: url(${motorBgImage});
 background-repeat: no-repeat;
 background-position:center;
 background-size: cover;
-height: ${({hg})=>hg || "450px"};
+height: ${({hg})=>hg || "350px"};
 color: #FFF;
 display: flex;
 flex-direction: column;
@@ -40,7 +41,7 @@ padding: 0 70px;
 export const SideBar = styled.div`
 flex: 1;
 color: var(--text, #373737);
-padding: 85px 28px 0 0;
+padding: 87px 28px 0 0;
 `
 
 export const Col = styled.div`
@@ -81,16 +82,14 @@ padding-top: 15px;
     display: flex;
     align-items: center;
     margin: 10px 0;
-
 }
 
 input{
     width: 22px;
-    height: 25px;
-    border-radius: 8px;
+    height: 22px;
+    border-radius: 5px;
     border: 1px solid #666;
     background: #FFF;
-    
 }
 
 label{
@@ -104,14 +103,15 @@ label{
 `
 
 export const Button = styled.button`
-width: 115.804px;
-height: 38.968px;
+width: ${({wd})=>wd || '115.804px'};
+height: ${({hgt})=>hgt || '38.968px'};
 flex-shrink: 0;
 color: #FFF;
 font-weight: 700;
 font-size: 16px;
+margin: ${({mrg}) => mrg || '0'};
 border:none;
-border-radius: 60px;
+border-radius: ${({br})=>br || '60px'};
 background: ${({bg})=>bg || 'var(--sariq, #FF7A00)'} ;
 box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
 cursor: pointer;
@@ -161,8 +161,10 @@ button{
 export const GridContainer = styled.div`
 display: grid;
 grid-template-columns: auto auto auto auto;
-gap: 20px;
+gap: 10px;
 padding-top: 30px;
+margin-bottom: 20px;
+
 
 img{
     width:80%;
@@ -176,8 +178,8 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 padding: 5px 15px;
-width: 288px;
-height: 317px;
+width: 100%;
+height: 367px;
 border-radius: 20px;
 background: #FFF;
 box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);

@@ -52,7 +52,7 @@ export default function NavbarComp() {
                         })}
                 
                 
-                <Link to='/motor' style={{textDecoration:'none'}}><button className='seeAll' >See all     </button></Link>
+                <Link to='/motorpage' style={{textDecoration:'none'}}><button className='seeAll' >See all     </button></Link>
             
                             
                         

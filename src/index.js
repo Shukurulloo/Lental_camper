@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import MotorComponents from './components/pages/MotorComp';
+
 import CartComp from './components/pages/Cart';
 import CampingPlaceComp from './components/pages/CampingPlace';
 import CarInfo from './components/pages/Info';
@@ -16,6 +16,8 @@ import SignInPage from './components/pages/SignInPage';
 import RegistratePage from './components/pages/RegistratePage';
 import { SampleComponent } from './components/popup/testPopUp';
 import PopupComp from './components/popup/popup';
+import MotorComponents from './components/pages/MotorComp';
+import Motorpage from './components/motorPage/MotorPage';
 
 
 
@@ -26,8 +28,8 @@ root.render(
     <BrowserRouter>
       <Routes>
       <Route path="/popup1" element={ <PopupComp/>} />
-
-
+    
+      <Route path="/motorpage" element={ < Motorpage/>} />
       <Route path="/registrate" element={<RegistratePage/>} />
       <Route path="/signin" element={<SignInPage/>} />
       <Route path="/app" element={<  WrapMotor/>} />

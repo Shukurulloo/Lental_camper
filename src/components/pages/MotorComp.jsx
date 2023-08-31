@@ -1,31 +1,25 @@
 import React, { useState } from 'react';
-import NavbarComp from '../navbar/Navbar';
-import { Button, Col, Flex, Form, GridContainer, GridItems, HeadWrapper, ItemBar, Line, MainWrap, Row,  Text } from '../style/MotorComponentsStyle';
+import { Flex, HeadWrapper, ItemBar, MainWrap, Row, SideBar, Text }  from '../style/MotorComponentsStyle';
+import { FaThLarge, FaThList } from 'react-icons/fa';
 import carData from '../mock/data';
-import { Link } from 'react-router-dom';
-import { FaStar, FaThLarge, FaThList } from 'react-icons/fa';
-import FooterComp from '../footer/Footer';
-import Sidebar from '../Sidebar/Sidebar';
+import NavbarComp from '../navbar/Navbar'
+import FooterComp from '../footer/Footer'
 
 
 
 
-const MotorComponents = () => {
-  const [filteredData, setFilteredData] = useState(carData);
-  const [isBrandChecked, setIsBrandChecked] = useState (false);
-  const handleClick = ()=> {
-    setIsBrandChecked(!isBrandChecked);
-    if (!isBrandChecked) {
-      const filteredCar = [...carData];
-      const filteredCompany = filteredCar.filter((carData) =>
-        carData.company.startsWith("다온티앤티")
-        );
-        setFilteredData(filteredCompany);
-    }else{
-      setFilteredData(...carData);
-    }
-  }
-  console.log("filtered ompany ", filteredData)
+const MotorComponents = ({onClick}) => {
+  const [on, setOn] = useState(true)
+  // const [active, setActive] = useState(true)
+  
+
+  // console.log(active)
+  console.log(on)
+
+  console.log(carData)
+
+
+
   return (
     <div style={{background:' #FAFAFA'}}>
       <NavbarComp/>
@@ -35,10 +29,13 @@ const MotorComponents = () => {
         <h1>Motors</h1>
       </HeadWrapper>
       <MainWrap>
-      <Sidebar />
+        <SideBar>
+          
+            <Text>Cost of car</Text>
+            
+        </SideBar>
         <ItemBar>
           <Row>
-            
             <Flex left>
             <div>Item: <span style={{color:'blue'}}>{carData.length}</span></div>
             </Flex>
@@ -50,36 +47,25 @@ const MotorComponents = () => {
               <select name="" id="" style={{margin:'0px 15px', width:'80px', height:'30px'}}>
                 <option value="">60</option>
               </select>
-              <button style={{borderRadius: '5px 0px 0px 5px'}}><FaThLarge/></button>
-              <button style={{borderRadius: '0px 5px 5px 0px'}}><FaThList style={{color:'grey'}}/></button>
+              <div style={{borderRadius: '5px 0px 0px 5px', border:'1px solid rgba(55, 55, 55, 0.30)', padding:'4px 9px'}} active={on} onClick={()=>{
+                      // setActive(true);
+                      onClick(true); 
+                      setOn(true)}} >
+                        <FaThLarge/></div>
+
+              <div style={{borderRadius: '0px 5px 5px 0px', border:'1px solid rgba(55, 55, 55, 0.30)', padding:'4px 9px'}} active={!on} onClick={()=>{
+                      // setActive(false);
+                      onClick(false); 
+                      setOn(false)}}><FaThList style={{color:'grey'}}/></div>
             </Flex>
           </Row>
-          <GridContainer>{carData.slice(0, 24).map((item) => {
-            return (
-              
-                <GridItems key={item.id}>      
-                  <img src={item.photo} alt="campingCar" />
-                  <div style={{fontWeight:'700' }}>{item.name}</div>
-                  <div style={{display:'flex', justifyContent:'space-between'}}>
-                  <div>{item.company} </div>
-                  <span><FaStar style={{ color: "#f9a826" }}/>5.3</span>
-                  </div>
-                  <h2 style={{color:'#006DAB'}}>{item.cost}</h2>
-                  <div style={{display:'flex', justifyContent:'space-between'}}>
-                    <Button wd='100px' hgt='35px' br='10px' bg='transparent' style={{border: '1px solid #006DAB', color:'#006DAB'}}>Order</Button>
-                    <Link to={`/info/${item.id}`}  style={{textDecoration:'none'}}>
-                      <Button wd='100px' hgt='35px' br='10px' bg='transparent' style={{border: '1px solid #006DAB', color:'#006DAB'}}>Detail</Button>
-                    </Link>
-                  </div>
-            
-                </GridItems>
-              
-            )
-          })}
-          </GridContainer>
+          {/* <HMenuComp active={on}/> */}
+          {/* <YMenuComp active={!on}/> */}
+          {/* <YHcontroller active={active}/> */}
+
         </ItemBar>
       </MainWrap>
-      <FooterComp/>
+      
     </div>
   )
 }
