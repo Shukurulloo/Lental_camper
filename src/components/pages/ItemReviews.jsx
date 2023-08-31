@@ -177,7 +177,7 @@ export default function ItemReviewsComponent() {
       <KakaoMap/>
          {/* <img src={chart} alt="" /> */}
           
-          <div style={{display:'flex', width:'92%', padding: '25px 0px 30px'}}> 
+          <div style={{display:'flex', width:'92%', padding: '30px 0px 30px'}}> 
           <div className='left'>
             <p>Phone number:</p>
             <h4>+7 237 181 181<br/>

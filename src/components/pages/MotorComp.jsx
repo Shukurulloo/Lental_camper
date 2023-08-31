@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
+import NavbarComp from '../navbar/Navbar'
 import { Flex, HeadWrapper, ItemBar, MainWrap, Row, SideBar, Text }  from '../style/MotorComponentsStyle';
 import { FaThLarge, FaThList } from 'react-icons/fa';
 import carData from '../mock/data';
-import NavbarComp from '../navbar/Navbar'
-import FooterComp from '../footer/Footer'
+
 
 
 

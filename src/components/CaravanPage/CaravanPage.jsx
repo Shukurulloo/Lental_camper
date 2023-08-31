@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 import Sidebar from '../Sidebar/Sidebar'
-import MotorComponents from '../pages/MotorComp'
-import YHcontroller from './YHcontrollaer'
+import YHcontroller from './YHcontrollerC'
+import CaravanComponents from '../pages/CaravanComp'
 import FooterComp from '../footer/Footer'
 
-const Motorpage = () => {
+
+const Caravanpage = () => {
   const [active, setActive] = useState(true)  
   return (
     <div style={{background:' #FAFAFA'}}>
      
-        <MotorComponents onClick={(state)=>{
+        <CaravanComponents onClick={(state)=>{
             setActive(state)
         } }/>
         <div style={{display:'flex', padding:'0 70px'}}>
@@ -25,4 +26,4 @@ const Motorpage = () => {
   )
 }
 
-export default Motorpage
+export default Caravanpage

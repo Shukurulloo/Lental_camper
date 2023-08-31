@@ -23,20 +23,21 @@ padding: 30px 129px 72px 70px;
 export const FlexLeft = styled.div`
 display: flex;
 flex: 5;
+
 `
 
 export const FlexRight = styled.div`
 display: flex;
 flex-direction: column;
 flex: 2;
-height: 550px;
 overflow-y: scroll;
+height: 550px;
 `
 
 export const DescriptionTitle = styled.div`
 padding-top: 30px;
-height: 476px;
 line-height: normal;
+
 
 
 h2{
@@ -67,17 +68,17 @@ export const FormCard = styled.div`
 `
 
 export const Text = styled.div`
-color: #000;
-font-size: 25px;
-font-weight: 600;
-line-height: normal;
-margin: 50px 0 30px;
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 50px 0 30px;
 `
 export const FormControl = styled.div`
-display: flex;
-flex-direction: column;
-font-family: 'Open Sans', sans-serif;
-line-height: normal;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    line-height: normal;
 
 label{
     color: rgba(55, 55, 55, 0.80);
@@ -146,16 +147,16 @@ export const CarouselInner = styled.div`
     justify-content:center;
 `
 export const CostTitle = styled.div`
-display: flex;
-align-items: center;
-justify-content:center;
-width: 350px;
-height: 50px;
-flex-shrink: 0;
-border-radius: 10px;
-background: rgba(95, 55, 55, 0.10);
-/* btn sh */
-box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 350px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(95, 55, 55, 0.10);
+    /* btn sh */
+    box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.10);
 
 h5{
     color: var(--text, #373737);
@@ -167,11 +168,11 @@ h5{
 `
 
 export const ArrowRight = styled.div`
-display:flex;
-align-items: center;
-justify-content: center;
-width: 40px;
-height: 40px;
-background: #006DAB;
-border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #006DAB;
+    border-radius: 50%;
 `

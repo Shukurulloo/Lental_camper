@@ -6,6 +6,7 @@ display: flex;
 align-items: center;
 width: 100%;
 flex-direction: column;
+height: 100%;
 `
 
 export const WrapImg = styled.div`
@@ -122,6 +123,7 @@ p{
     font-weight: 400;
     line-height: normal;
     margin-top: 10px;
+    margin-bottom: 50px;
 
     
 }

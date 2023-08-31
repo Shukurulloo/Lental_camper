@@ -7,6 +7,7 @@ import { HiOutlinePhone , HiOutlineLocationMarker} from "react-icons/hi";
 import { MdAccessTime } from "react-icons/md";
 import { VscHome } from "react-icons/vsc";
 import Zoom from 'react-reveal/Zoom';
+import KakaoMap from './kakaoMap'
 
 
 
@@ -55,9 +56,13 @@ const CampinPlaceMap = () => {
                   Impedit pariatur facere maxime obcaecati? Cupiditate rerum, cumque quo autem quis iure, explicabo sed, alias iusto asperiores perspiciatis! Excepturi vero eum deserunt. 
                   Eos quasi harum veritatis, nostrum aspernatur maiores explicabo itaque sequi tempora numquam amet expedita molestias voluptatum obcaecati, sunt animi. Illo ipsa adipisci aspernatur. 
                  Mollitia commodi impedit, sit officiis esse quidem praesentium, ut at delectus ex, minima vero iure? Magnam, dolorum.</p>
+
+              
             </AddressWrap>
+          
             </LocationWrap>
-            <FooterComp/>
+            <KakaoMap/> 
+            <div style={{marginTop:'90px'}}></div><FooterComp/>
         </ContainerMap>
   )
 }

@@ -76,7 +76,7 @@ export default function NavbarComp() {
                         })}
                 
                 
-                <Link to='/caravancomponents' style={{textDecoration:'none'}}><button className='seeAll' style={{}}>See all <ImArrowRight2 style={{margin:'0 11px 0 10px'}}/> </button></Link>
+                <Link to='/caravanpage' style={{textDecoration:'none'}}><button className='seeAll' style={{}}>See all <ImArrowRight2 style={{margin:'0 11px 0 10px'}}/> </button></Link>
             
                             
                         

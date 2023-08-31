@@ -1,4 +1,4 @@
-
+import '../../index.css'
 import { useEffect } from "react";
 import { KakaoWrap } from "../style/kakaoMapStyle";
 
@@ -19,7 +19,7 @@ function KakaoMap() {
 
   useEffect(() => {
     const my_script = new_script(
-      `https://dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=ffcd1a70d64fb886c29f69a95596a5a4`
+      `https://dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=4ef400ca395d8997a2216abdd59e712b`
     );
     
     my_script.then(() => {
@@ -34,17 +34,17 @@ function KakaoMap() {
         const map = new kakao.maps.Map(mapContainer, options);
 
         const markerPositions = [
-          new kakao.maps.LatLng(35.601, 126.9206),
-          new kakao.maps.LatLng(37.5665, 126.978),
-          new kakao.maps.LatLng(37.355, 126.8),
-          new kakao.maps.LatLng(37.465, 126.878),
-          new kakao.maps.LatLng(36.5665, 126.978),
-          new kakao.maps.LatLng(37.5665, 127.978),
-          new kakao.maps.LatLng(36.5665, 128.978),
-          new kakao.maps.LatLng(34.4507, 126.57),
-          new kakao.maps.LatLng(34.507, 127.57),
-          new kakao.maps.LatLng(35.507, 128.57),
-          new kakao.maps.LatLng(35, 128.57),
+          // new kakao.maps.LatLng(35.601, 126.9206),
+          // new kakao.maps.LatLng(37.5665, 126.978),
+          // new kakao.maps.LatLng(37.355, 126.8),
+          // new kakao.maps.LatLng(37.465, 126.878),
+          // new kakao.maps.LatLng(36.5665, 126.978),
+          // new kakao.maps.LatLng(37.5665, 127.978),
+          // new kakao.maps.LatLng(36.5665, 128.978),
+          // new kakao.maps.LatLng(34.4507, 126.57),
+          // new kakao.maps.LatLng(34.507, 127.57),
+          // new kakao.maps.LatLng(35.507, 128.57),
+          // new kakao.maps.LatLng(35, 128.57),
         ];
 
         markerPositions.forEach((position) => {
@@ -60,7 +60,7 @@ function KakaoMap() {
   return (
     <KakaoWrap>
       <div id="map" className="map" />
-    </KakaoWrap>
+      </KakaoWrap>
   );
 }
 
